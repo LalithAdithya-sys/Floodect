@@ -1,0 +1,100 @@
+body {
+    background-color:#a5dfdf;
+    height:100%
+    
+    
+  }
+
+  
+
+
+.title{
+    position: relative;
+    
+    color: white;
+    text-align: center;
+    top:50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+  }
+  
+  /*****************************************************MAP***************************************************************************************/
+  
+  
+  .floodProneAreasMap { 
+    height: 480px;
+    width:900px;
+    position: relative;
+    top: 100px;
+  }
+
+  .i{
+    margin: 0 auto 0 auto;
+    background-color: rgb(255, 157, 127);
+    width: 500px;
+}
+
+.m{
+    background-color: antiquewhite;
+    margin:0px 0px;
+}
+
+  #map {
+    margin: auto;
+    height: 500px;
+    width: 70%;
+    position: relative;
+  }
+  
+  .formBlock {
+    max-width: 300px;
+    background-color: #FFF;
+    border: 1px solid #ddd;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    z-index: 999;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.65);
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .leaflet-top .leaflet-control {
+    margin-top: 180px;
+  }
+  
+  .input {
+    max-width: 275px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ddd;
+    font-size: 15px;
+    border-radius: 3px;
+  }
+
+  .sub-btn {
+    display: none;
+  }
+  
+  #form {
+    padding: 0;
+    margin: 0;
+  }
+  
+  input:nth-child(1) {
+    margin-bottom: 10px;
+  }
+  
+  .a{
+    background-color: antiquewhite;
+   margin-top: 20px;
+    display: inline-block;
+    position: relative;
+    height: 70px;
+    width: 200px;
+    left: 600px;
+    margin:20px;
+    text-align: center;
+    
+  }

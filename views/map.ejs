@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flodect - Map</title>
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quantico:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles1.css" type="text/css">
+    
+</head>
+<body>
+    <div class="a">
+        <h1>Your path</h1>
+    </div>
+    <div id='map'>
+      <div class="formBlock">
+        <form id="form">
+          <input type="text" name="start" class="input" id="start" placeholder="Choose starting point" value=<%= st %>/>
+          <input type="text" name="end" class="input" id="destination" placeholder="Choose starting point" value=<%= dest %>/>
+          <button class = "sub-btn" type="submit">Get Directions</button>
+        </form>
+      </div>
+    </div>
+
+    <div id = 'info'>
+      <p id="dist" value=<%= lat %> ></p>
+      <p id="time" value=<%= long %> ></p>
+    </div>
+
+    <hr>
+    <div class="m">
+        <table class="i">
+            <tr><td><b>Legend</b></td></td></tr>
+            <tr><td>Flooded area</td>
+                <td>🟦</td>
+            </tr>
+            
+            <tr><td>Mild flood</td>
+                <td>🟨</td>
+            </tr>
+            <tr><td>Destination</td>
+                <td>🟥</td>
+            </tr>
+        </table>
+
+        
+    </div>
+    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js"></script>
+  <script src="https://www.mapquestapi.com/sdk/leaflet/v2.2/mq-map.js?key=YBwNE103iAeIsrzsLManzYI3Cp30FHDa"></script>
+  <script src="https://www.mapquestapi.com/sdk/leaflet/v2.2/mq-routing.js?key=YBwNE103iAeIsrzsLManzYI3Cp30FHDa"></script>
+  <script src="js/maps.js"></script>
+    
+</body>
+</html>
